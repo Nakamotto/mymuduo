@@ -28,7 +28,7 @@ do
     cp $header /usr/include/mymuduo
 done
 
-cd..
+cd ..
 
 cd `pwd`/lib/libmymuduo.so /usr/lib
 
