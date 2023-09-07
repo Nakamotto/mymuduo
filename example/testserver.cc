@@ -1,5 +1,5 @@
-#include "../TcpServer.h"
-#include "../Logger.h"
+#include "../src/TcpServer.h"
+#include "../src/Logger.h"
 #include <string>
 #include <functional>
 class EchoServer
