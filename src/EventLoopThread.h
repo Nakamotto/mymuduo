@@ -1,19 +1,25 @@
 #pragma once
+
 #include "noncopyable.h"
 #include "Thread.h"
-#include <mutex>
-#include <string>
-#include <condition_variable>
+
 #include <functional>
+#include <mutex>
+#include <condition_variable>
+#include <string>
+
 class EventLoop;
+
 class EventLoopThread : noncopyable
 {
 public:
-    using ThreadInitCallback = std::function<void(EventLoop *)>;
-    EventLoopThread(const ThreadInitCallback &cb = ThreadInitCallback(), const std::string &name = std::string());
-    ~EventLoopThread();
-    EventLoop *startLoop();
+    using ThreadInitCallback = std::function<void(EventLoop*)>; 
 
+    EventLoopThread(const ThreadInitCallback &cb = ThreadInitCallback(), 
+        const std::string &name = std::string());
+    ~EventLoopThread();
+
+    EventLoop* startLoop();
 private:
     void threadFunc();
 

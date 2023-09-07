@@ -17,19 +17,19 @@ cd `pwd`/build &&
 cd ..
 
 #安装头文件和库文件
-if [ ! -d /usr/include/mymuduo ]; then
-    mkdir /usr/include/mymuduo
-fi
+# if [ ! -d /usr/include/mymuduo ]; then
+#     mkdir /usr/include/mymuduo
+# fi
 
-cd src
+# cd src
 
-for header in `ls *.h`
-do
-    cp $header /usr/include/mymuduo
-done
+# for header in `ls *.h`
+# do
+#     cp $header /usr/include/mymuduo
+# done
 
-cd ..
+# cd ..
 
-cp `pwd`/lib/libmymuduo.so /usr/lib
+# cp `pwd`/lib/libmymuduo.so /usr/lib
 
-ldconfig 
+# ldconfig 

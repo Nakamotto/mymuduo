@@ -3,7 +3,7 @@
 #include "InetAddress.h"
 
 #include <unistd.h>
-#include <sys/types.h>
+#include <sys/types.h>         
 #include <sys/socket.h>
 #include <strings.h>
 #include <netinet/tcp.h>
@@ -16,7 +16,7 @@ Socket::~Socket()
 
 void Socket::bindAddress(const InetAddress &localaddr)
 {
-    if (0 != ::bind(sockfd_, (sockaddr *)localaddr.getSockAddr(), sizeof(sockaddr_in)))
+    if (0 != ::bind(sockfd_, (sockaddr*)localaddr.getSockAddr(), sizeof(sockaddr_in)))
     {
         LOG_FATAL("bind sockfd:%d fail \n", sockfd_);
     }
@@ -37,11 +37,11 @@ int Socket::accept(InetAddress *peeraddr)
      * 2. 对返回的connfd没有设置非阻塞
      * Reactor模型 one loop per thread
      * poller + non-blocking IO
-     */
+     */ 
     sockaddr_in addr;
     socklen_t len = sizeof addr;
     bzero(&addr, sizeof addr);
-    int connfd = ::accept4(sockfd_, (sockaddr *)&addr, &len, SOCK_NONBLOCK | SOCK_CLOEXEC);
+    int connfd = ::accept4(sockfd_, (sockaddr*)&addr, &len, SOCK_NONBLOCK | SOCK_CLOEXEC);
     if (connfd >= 0)
     {
         peeraddr->setSockAddr(addr);

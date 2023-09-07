@@ -1,6 +1,8 @@
 #include "InetAddress.h"
+
 #include <strings.h>
-#include <cstring>
+#include <string.h>
+
 InetAddress::InetAddress(uint16_t port, std::string ip)
 {
     bzero(&addr_, sizeof addr_);
@@ -11,27 +13,33 @@ InetAddress::InetAddress(uint16_t port, std::string ip)
 
 std::string InetAddress::toIp() const
 {
-    char buf[64];
+    // addr_
+    char buf[64] = {0};
     ::inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
     return buf;
 }
+
 std::string InetAddress::toIpPort() const
 {
-    char buf[64];
+    // ip:port
+    char buf[64] = {0};
     ::inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
     size_t end = strlen(buf);
     uint16_t port = ntohs(addr_.sin_port);
-    sprintf(buf + end, ":%u", port);
+    sprintf(buf+end, ":%u", port);
     return buf;
 }
+
 uint16_t InetAddress::toPort() const
 {
     return ntohs(addr_.sin_port);
 }
 
 // #include <iostream>
-
 // int main()
 // {
-//     std::cout << InetAddress(8080).toIpPort() << std::endl;
+//     InetAddress addr(8080);
+//     std::cout << addr.toIpPort() << std::endl;
+
+//     return 0;
 // }

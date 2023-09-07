@@ -11,7 +11,7 @@ public:
         server_.setConnectionCallback(std::bind(&EchoServer::onConnectionCallback, this, std::placeholders::_1));
         server_.setMessageCallback(std::bind(&EchoServer::onMessageCallback, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 
-        server_.setThreadNum(3);
+        server_.setThreadNum(1);
     }
     void start()
     {
@@ -33,7 +33,7 @@ private:
     }
     void onMessageCallback(const TcpConnectionPtr &conn, Buffer *buf, Timestamp time)
     {
-        std::string msg = buf->retreveAllAsString();
+        std::string msg = buf->retrieveAllAsString();
         conn->send(msg);
         conn->shutdown();
     }

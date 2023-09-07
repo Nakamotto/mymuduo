@@ -2,7 +2,7 @@
 
 /**
  * 用户使用muduo编写服务器程序
- */
+ */ 
 #include "EventLoop.h"
 #include "Acceptor.h"
 #include "InetAddress.h"
@@ -22,7 +22,7 @@
 class TcpServer : noncopyable
 {
 public:
-    using ThreadInitCallback = std::function<void(EventLoop *)>;
+    using ThreadInitCallback = std::function<void(EventLoop*)>;
 
     enum Option
     {
@@ -31,9 +31,9 @@ public:
     };
 
     TcpServer(EventLoop *loop,
-              const InetAddress &listenAddr,
-              const std::string &nameArg,
-              Option option = kNoReusePort);
+                const InetAddress &listenAddr,
+                const std::string &nameArg,
+                Option option = kNoReusePort);
     ~TcpServer();
 
     void setThreadInitcallback(const ThreadInitCallback &cb) { threadInitCallback_ = cb; }
@@ -46,7 +46,6 @@ public:
 
     // 开启服务器监听
     void start();
-
 private:
     void newConnection(int sockfd, const InetAddress &peerAddr);
     void removeConnection(const TcpConnectionPtr &conn);
@@ -64,8 +63,7 @@ private:
     std::shared_ptr<EventLoopThreadPool> threadPool_; // one loop per thread
 
     ConnectionCallback connectionCallback_; // 有新连接时的回调
-
-    MessageCallback messageCallback_;             // 有读写消息时的回调（TcpServer已经将客户发来的消息读到Buffer类里面之后（传出参数），再执行MessageCallback）
+    MessageCallback messageCallback_; // 有读写消息时的回调
     WriteCompleteCallback writeCompleteCallback_; // 消息发送完成以后的回调
 
     ThreadInitCallback threadInitCallback_; // loop线程初始化的回调

@@ -10,8 +10,7 @@ class Socket : noncopyable
 public:
     explicit Socket(int sockfd)
         : sockfd_(sockfd)
-    {
-    }
+    {}
 
     ~Socket();
 
@@ -26,7 +25,6 @@ public:
     void setReuseAddr(bool on);
     void setReusePort(bool on);
     void setKeepAlive(bool on);
-
 private:
     const int sockfd_;
 };

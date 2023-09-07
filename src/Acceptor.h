@@ -1,25 +1,33 @@
 #pragma once
+#include "noncopyable.h"
 #include "Socket.h"
 #include "Channel.h"
 
+#include <functional>
+
 class EventLoop;
 class InetAddress;
-class Acceptor
+
+class Acceptor : noncopyable
 {
 public:
-    using NewConnectionCallback = std::function<void(int sockfd, const InetAddress &)>;
+    using NewConnectionCallback = std::function<void(int sockfd, const InetAddress&)>;
     Acceptor(EventLoop *loop, const InetAddress &listenAddr, bool reuseport);
     ~Acceptor();
-    void setNewConnectionCallback(NewConnectionCallback cb) { newConnectionCallback_ = cb; }
 
-    bool listening() const { return listening_; }
+    void setNewConnectionCallback(const NewConnectionCallback &cb) 
+    {
+        newConnectionCallback_ = cb;
+    }
+
+    bool listenning() const { return listenning_; }
     void listen();
-    void handleRead();
-
 private:
-    EventLoop *loop_; // 对应baseLoop
+    void handleRead();
+    
+    EventLoop *loop_; // Acceptor用的就是用户定义的那个baseLoop，也称作mainLoop
     Socket acceptSocket_;
     Channel acceptChannel_;
     NewConnectionCallback newConnectionCallback_;
-    bool listening_;
+    bool listenning_;
 };
