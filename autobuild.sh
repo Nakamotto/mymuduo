@@ -30,6 +30,6 @@ done
 
 cd ..
 
-cd `pwd`/lib/libmymuduo.so /usr/lib
+cp `pwd`/lib/libmymuduo.so /usr/lib
 
 ldconfig 
