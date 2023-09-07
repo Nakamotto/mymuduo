@@ -21,11 +21,15 @@ if [ ! -d /usr/include/mymuduo ]; then
     mkdir /usr/include/mymuduo
 fi
 
-for header in 'ls *.h'
+cd src
+
+for header in `ls *.h`
 do
-    cp $header /user/include/mymuduo
+    cp $header /usr/include/mymuduo
 done
 
-cd `pwd` /lib/libmymuduo.so /usr/lib
+cd..
+
+cd `pwd`/lib/libmymuduo.so /usr/lib
 
 ldconfig 
