@@ -1,3 +1,0 @@
-/home/chaoxu/projects/cplusplus/muduo/build/CMakeFiles/mymuduo.dir
-/home/chaoxu/projects/cplusplus/muduo/build/CMakeFiles/edit_cache.dir
-/home/chaoxu/projects/cplusplus/muduo/build/CMakeFiles/rebuild_cache.dir
