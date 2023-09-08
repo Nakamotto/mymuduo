@@ -1,5 +1,5 @@
 build/
 .vscode/
 example/testserver
-lib/
+libmymuduo.so
 *.o
