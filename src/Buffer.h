@@ -43,7 +43,7 @@ public:
     {
         if (len < readableBytes())
         {
-            readerIndex_ += len; // 应用只读取了刻度缓冲区数据的一部分，就是len，还剩下readerIndex_ += len -> writerIndex_
+            readerIndex_ += len; // 应用只读取了可读缓冲区数据的一部分，就是len，还剩下readerIndex_ += len -> writerIndex_
         }
         else   // len == readableBytes()
         {

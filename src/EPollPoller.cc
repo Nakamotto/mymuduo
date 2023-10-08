@@ -6,11 +6,11 @@
 #include <unistd.h>
 #include <strings.h>
 
-// channel未添加到poller中
+// channel不在epoll_fd和channelMap中
 const int kNew = -1;  // channel的成员index_ = -1
-// channel已添加到poller中
+// channel在epoll_fd和channelMap中
 const int kAdded = 1;
-// channel从poller中删除
+// channel不在epoll_fd却在channelMap中
 const int kDeleted = 2;
 
 EPollPoller::EPollPoller(EventLoop *loop)

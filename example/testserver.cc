@@ -46,7 +46,7 @@ int main()
     EventLoop baseLoop;
     InetAddress addr(8000);
     EchoServer server(&baseLoop, addr, "EchoServer-01"); // Acceptor non-blokcing listen create bind
-    server.start();                                      // listen loopthread listenfd _> acceptChannel
-    baseLoop.loop();                                     // 启动mainLoop底层的Poller
+    server.start();  // (epoll_create、epoll_ctl)listen loopthread listenfd _> acceptChannel
+    baseLoop.loop(); // (epoll_wait循环)启动mainLoop底层的Poller
     return 0;
 }
