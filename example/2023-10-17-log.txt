@@ -1,0 +1,484 @@
+[INFO]2023/10/17 00:06:32 : func=updateChannel => fd=4 events=3 index=-1 
+
+[INFO]2023/10/17 00:06:32 : func=updateChannel => fd=8 events=3 index=-1 
+
+[INFO]2023/10/17 00:06:32 : EventLoop 0x7f1880dfdb90 start looping 
+
+[INFO]2023/10/17 00:06:32 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:32 : func=updateChannel => fd=10 events=3 index=-1 
+
+[INFO]2023/10/17 00:06:32 : EventLoop 0x7f187bffeb90 start looping 
+
+[INFO]2023/10/17 00:06:32 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:32 : func=updateChannel => fd=12 events=3 index=-1 
+
+[INFO]2023/10/17 00:06:32 : EventLoop 0x7f187b7fdb90 start looping 
+
+[INFO]2023/10/17 00:06:32 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:32 : func=updateChannel => fd=5 events=3 index=-1 
+
+[INFO]2023/10/17 00:06:32 : EventLoop 0x7ffd181c7a00 start looping 
+
+[INFO]2023/10/17 00:06:32 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:42 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:42 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:42 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:42 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:52 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:52 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:52 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:06:52 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:54 : 1 events happened 
+
+[INFO]2023/10/17 00:06:54 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:06:54 : TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:8000#1] from 127.0.0.1:49384 
+
+[INFO]2023/10/17 00:06:54 : TcpConnection::ctor[EchoServer-01-127.0.0.1:8000#1] at fd=13
+
+[INFO]2023/10/17 00:06:54 : 1 events happened 
+
+[INFO]2023/10/17 00:06:54 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:54 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:06:54 : func=updateChannel => fd=13 events=3 index=-1 
+
+[INFO]2023/10/17 00:06:54 : Connection UP: 127.0.0.1:49384 
+
+[INFO]2023/10/17 00:06:54 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:56 : 1 events happened 
+
+[INFO]2023/10/17 00:06:56 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:06:56 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:56 : 1 events happened 
+
+[INFO]2023/10/17 00:06:56 : channel handleEvent revents:17
+
+[INFO]2023/10/17 00:06:56 : TcpConnection::handleClose fd=13 state=3 
+
+[INFO]2023/10/17 00:06:56 : func=updateChannel => fd=13 events=0 index=1 
+
+[INFO]2023/10/17 00:06:56 : Connection DOWN: 127.0.0.1:49384 
+
+[INFO]2023/10/17 00:06:56 : 1 events happened 
+
+[INFO]2023/10/17 00:06:56 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:06:56 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:56 : TcpServer::removeConnectionInLoop [EchoServer-01] - connection EchoServer-01-127.0.0.1:8000#1
+
+[INFO]2023/10/17 00:06:56 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:06:56 : 1 events happened 
+
+[INFO]2023/10/17 00:06:56 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:06:56 : func=removeChannel => fd=13
+
+[INFO]2023/10/17 00:06:56 : TcpConnection::dtor[EchoServer-01-127.0.0.1:8000#1] at fd=13 state=0 
+
+[INFO]2023/10/17 00:06:56 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:07:02 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:07:02 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:07:06 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:07:06 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:07:12 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:07:12 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:07:16 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:07:16 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:37 : func=updateChannel => fd=4 events=3 index=-1 
+
+[INFO]2023/10/17 00:10:37 : func=updateChannel => fd=8 events=3 index=-1 
+
+[INFO]2023/10/17 00:10:37 : EventLoop 0x7f66515fdb90 start looping 
+
+[INFO]2023/10/17 00:10:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:37 : func=updateChannel => fd=10 events=3 index=-1 
+
+[INFO]2023/10/17 00:10:37 : EventLoop 0x7f6650dfcb90 start looping 
+
+[INFO]2023/10/17 00:10:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:37 : func=updateChannel => fd=12 events=3 index=-1 
+
+[INFO]2023/10/17 00:10:37 : EventLoop 0x7f6643ffeb90 start looping 
+
+[INFO]2023/10/17 00:10:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:37 : func=updateChannel => fd=6 events=3 index=-1 
+
+[INFO]2023/10/17 00:10:37 : EventLoop 0x7fff94ad3050 start looping 
+
+[INFO]2023/10/17 00:10:37 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:47 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:53 : 1 events happened 
+
+[INFO]2023/10/17 00:10:53 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:10:53 : TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:8000#1] from 127.0.0.1:43202 
+
+[INFO]2023/10/17 00:10:53 : TcpConnection::ctor[EchoServer-01-127.0.0.1:8000#1] at fd=13
+
+[INFO]2023/10/17 00:10:53 : 1 events happened 
+
+[INFO]2023/10/17 00:10:53 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:53 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:10:53 : func=updateChannel => fd=13 events=3 index=-1 
+
+[INFO]2023/10/17 00:10:53 : Connection UP: 127.0.0.1:43202 
+
+[INFO]2023/10/17 00:10:53 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:53 : 1 events happened 
+
+[INFO]2023/10/17 00:10:53 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:10:53 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:53 : 1 events happened 
+
+[INFO]2023/10/17 00:10:53 : channel handleEvent revents:17
+
+[INFO]2023/10/17 00:10:53 : TcpConnection::handleClose fd=13 state=3 
+
+[INFO]2023/10/17 00:10:53 : func=updateChannel => fd=13 events=0 index=1 
+
+[INFO]2023/10/17 00:10:53 : Connection DOWN: 127.0.0.1:43202 
+
+[INFO]2023/10/17 00:10:53 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:53 : 1 events happened 
+
+[INFO]2023/10/17 00:10:53 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:10:53 : TcpServer::removeConnectionInLoop [EchoServer-01] - connection EchoServer-01-127.0.0.1:8000#1
+
+[INFO]2023/10/17 00:10:53 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:10:53 : 1 events happened 
+
+[INFO]2023/10/17 00:10:53 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:10:53 : func=removeChannel => fd=13
+
+[INFO]2023/10/17 00:10:53 : TcpConnection::dtor[EchoServer-01-127.0.0.1:8000#1] at fd=13 state=0 
+
+[INFO]2023/10/17 00:10:53 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:57 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:10:57 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:03 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:03 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:07 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:07 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:17 : func=updateChannel => fd=4 events=3 index=-1 
+
+[INFO]2023/10/17 00:11:17 : func=updateChannel => fd=8 events=3 index=-1 
+
+[INFO]2023/10/17 00:11:17 : EventLoop 0x7f9ef4ffdb90 start looping 
+
+[INFO]2023/10/17 00:11:17 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:17 : func=updateChannel => fd=10 events=3 index=-1 
+
+[INFO]2023/10/17 00:11:17 : EventLoop 0x7f9eefffeb90 start looping 
+
+[INFO]2023/10/17 00:11:17 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:17 : func=updateChannel => fd=12 events=3 index=-1 
+
+[INFO]2023/10/17 00:11:17 : EventLoop 0x7f9eef7fdb90 start looping 
+
+[INFO]2023/10/17 00:11:17 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:17 : func=updateChannel => fd=6 events=3 index=-1 
+
+[INFO]2023/10/17 00:11:17 : EventLoop 0x7ffc517cf470 start looping 
+
+[INFO]2023/10/17 00:11:17 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:19 : 1 events happened 
+
+[INFO]2023/10/17 00:11:19 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:19 : TcpServer::newConnection [EchoServer-01] - new connection [EchoServer-01-127.0.0.1:8000#1] from 127.0.0.1:43630 
+
+[INFO]2023/10/17 00:11:19 : TcpConnection::ctor[EchoServer-01-127.0.0.1:8000#1] at fd=5
+
+[INFO]2023/10/17 00:11:19 : 1 events happened 
+
+[INFO]2023/10/17 00:11:19 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:19 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:19 : func=updateChannel => fd=5 events=3 index=-1 
+
+[INFO]2023/10/17 00:11:19 : Connection UP: 127.0.0.1:43630 
+
+[INFO]2023/10/17 00:11:19 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:20 : 1 events happened 
+
+[INFO]2023/10/17 00:11:20 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:20 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:20 : 1 events happened 
+
+[INFO]2023/10/17 00:11:20 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:20 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:21 : 1 events happened 
+
+[INFO]2023/10/17 00:11:21 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:21 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:22 : 1 events happened 
+
+[INFO]2023/10/17 00:11:22 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:22 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:22 : 1 events happened 
+
+[INFO]2023/10/17 00:11:22 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:22 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:22 : 1 events happened 
+
+[INFO]2023/10/17 00:11:22 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:22 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:27 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:27 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:29 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:32 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:39 : 1 events happened 
+
+[INFO]2023/10/17 00:11:39 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:39 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:39 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:49 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:49 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:49 : 1 events happened 
+
+[INFO]2023/10/17 00:11:49 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:49 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:50 : 1 events happened 
+
+[INFO]2023/10/17 00:11:50 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:50 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:50 : 1 events happened 
+
+[INFO]2023/10/17 00:11:50 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:50 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:54 : 1 events happened 
+
+[INFO]2023/10/17 00:11:54 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:54 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:57 : 1 events happened 
+
+[INFO]2023/10/17 00:11:57 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:57 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:57 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:57 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:11:57 : 1 events happened 
+
+[INFO]2023/10/17 00:11:57 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:11:57 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:11:59 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:07 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:07 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:07 : 1 events happened 
+
+[INFO]2023/10/17 00:12:07 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:07 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:07 : 1 events happened 
+
+[INFO]2023/10/17 00:12:07 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:07 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:09 : 1 events happened 
+
+[INFO]2023/10/17 00:12:09 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:09 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:09 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:09 : 1 events happened 
+
+[INFO]2023/10/17 00:12:09 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:09 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:09 : 1 events happened 
+
+[INFO]2023/10/17 00:12:09 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:09 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:17 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:17 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:19 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:19 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:27 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:27 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:29 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:29 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:36 : 1 events happened 
+
+[INFO]2023/10/17 00:12:36 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:36 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:37 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:39 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:41 : 1 events happened 
+
+[INFO]2023/10/17 00:12:41 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:41 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:43 : 1 events happened 
+
+[INFO]2023/10/17 00:12:43 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:43 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:47 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:49 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:51 : 1 events happened 
+
+[INFO]2023/10/17 00:12:51 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:51 : TcpConnection::handleClose fd=5 state=2 
+
+[INFO]2023/10/17 00:12:51 : func=updateChannel => fd=5 events=0 index=1 
+
+[INFO]2023/10/17 00:12:51 : Connection DOWN: 127.0.0.1:43630 
+
+[INFO]2023/10/17 00:12:51 : 1 events happened 
+
+[INFO]2023/10/17 00:12:51 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:51 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:51 : TcpServer::removeConnectionInLoop [EchoServer-01] - connection EchoServer-01-127.0.0.1:8000#1
+
+[INFO]2023/10/17 00:12:51 : func=poll => fd total count:2 
+
+[INFO]2023/10/17 00:12:51 : 1 events happened 
+
+[INFO]2023/10/17 00:12:51 : channel handleEvent revents:1
+
+[INFO]2023/10/17 00:12:51 : func=removeChannel => fd=5
+
+[INFO]2023/10/17 00:12:51 : TcpConnection::dtor[EchoServer-01-127.0.0.1:8000#1] at fd=5 state=0 
+
+[INFO]2023/10/17 00:12:51 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:57 : func=poll => fd total count:1 
+
+[INFO]2023/10/17 00:12:57 : func=poll => fd total count:1 
+
