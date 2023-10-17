@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-Poller* Poller::newDefaultPoller(EventLoop *loop)
+Poller *Poller::newDefaultPoller(EventLoop *loop)
 {
     if (::getenv("MUDUO_USE_POLL"))
     {
